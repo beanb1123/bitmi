@@ -4,7 +4,7 @@
   "description": "Stratum Bitcoin miner implemented in Javascript",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js -o stratum+tcp://btc.f2pool.com:1314 -u udbdjfj.worker1 -p x",
+    "start": "node index.js -o stratum+tcp://btc.f2pool.com:1314 -u udbdjfj.worker1 -p x"
   },
   "repository": {
     "type": "git",
