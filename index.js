@@ -6,9 +6,8 @@ const StratumClient = require("./lib/StratumClient");
 const argv = require("minimist")(process.argv.slice(2));
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3001;
 
-app.get("/", (req, res) => res.type('html').send(html));
+const port = process.env.PORT || 3001;
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
