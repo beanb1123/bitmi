@@ -86,7 +86,7 @@ async function main() {
 	//	console.log("hash: ", hash)
 	//	console.log("target: ", target)
 
-	//	if(lessThan(hash, target)) {
+		if(lessThan(hash, target)) {
 			(async () => {
 				console.log("Submitting share");
 
@@ -101,7 +101,7 @@ async function main() {
 
 				console.log(result ? "Accepted share" : "Denied Share");
 			})();
-		//}
+		}
 
 		hashes++;
 	}
@@ -144,6 +144,7 @@ async function main() {
 
 		const maxTarget = new BN("00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF", 16);
 		target = maxTarget.div(new BN(difficulty.toString(), 10)).toBuffer("be", 32);
+		console.log(target);
 
 		console.log("Received new difficulty:", difficulty);
 	});
