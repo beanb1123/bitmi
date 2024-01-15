@@ -86,7 +86,7 @@ async function main() {
 		console.log("hash: ", hash)
 		console.log("target: ", target)
 
-		if(lessThan(hash, target)) {
+	//	if(lessThan(hash, target)) {
 			(async () => {
 				console.log("Submitting share");
 
@@ -101,7 +101,7 @@ async function main() {
 
 				console.log(result ? "Accepted share" : "Denied Share");
 			})();
-		}
+		//}
 
 		hashes++;
 	}
