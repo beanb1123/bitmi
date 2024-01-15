@@ -83,7 +83,7 @@ async function main() {
 
 		
 
-	//	console.log("hash: ", hash)
+		console.log("hash: ", hash)
 	//	console.log("target: ", target)
 
 		if(lessThan(hash, target)) {
