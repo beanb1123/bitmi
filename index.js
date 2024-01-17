@@ -14,7 +14,7 @@ const express = require("express");
 
 const app = express();
 
-const get_hash = require('./hash');
+//const get_hash = require('./hash');
 
 
 const port = process.env.PORT || 3001;
