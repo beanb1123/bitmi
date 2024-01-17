@@ -132,7 +132,7 @@ async function main() {
 
 	function lessThan(a, b) {
 
-		for(let i = 0; i < a.length; i++) {
+		for(let i = 0; i < b.length; i++) {
 
 			if(a[i] < b[i])
 
@@ -156,7 +156,7 @@ async function main() {
 
 	function mine() {
 
-		//block_header.writeUInt32LE(nonce++, 76);
+		block_header.writeUInt32LE(nonce++, 76);
 
 
 
