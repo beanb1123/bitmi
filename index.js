@@ -224,7 +224,7 @@ async function main() {
 
 
 
-		setTimeout(loop, 1000);
+		setTimeout(loop, 0);
 
 	}
 
