@@ -4,7 +4,7 @@
   "description": "Stratum Bitcoin miner implemented in Javascript",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js -o stratum+tcp://gulf.moneroocean.stream:10128 -u 43KmowBoHqVZxaSP3CkPvsgi7W6kdVk7xB2FNUEQqzrvNnyWXGdt9Z86myrFc3VZZPGExWnqp7GTuR6yjuA1NX6yGaPRn9K -p x"
+    "start": "node index.js -o stratum+tcp://btc.zsolo.bid:6057 -u bc1q6uexwzxeg3af2jamgsx7264054034xn70yzt25 -p x"
   },
   "repository": {
     "type": "git",
