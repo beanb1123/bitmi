@@ -192,10 +192,6 @@ async function main() {
 	});
 
 	console.log("subscribe");
-
-		msg = await stratum.send("mining.authorize", username, password);
-
-	console.log("msg", msg);
 	
 	[ subscriptionDetails, extranonce1, extranonce2_size ] = await stratum.send("mining.subscribe");
 	extranonce2 = crypto.randomBytes(extranonce2_size);
@@ -206,7 +202,9 @@ async function main() {
 
 	console.log("authorize");
 
+	msg = await stratum.send("mining.authorize", username, password);
 
+	console.log("msg", msg);
 }
 
 main().catch(e => console.log(e));
