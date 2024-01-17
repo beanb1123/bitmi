@@ -156,7 +156,7 @@ async function main() {
 
 	function mine() {
 
-		block_header.writeUInt32LE(nonce++, block_header.length);
+		block_header.writeUInt32LE(nonce++, block_header.length - 1);
 
 
 
