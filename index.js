@@ -81,8 +81,8 @@ async function main() {
 
 		const hash = sha256(block_header);
 
-		console.log("hash: ", hash.toString('hex'))
-		console.log("target: ", target.toString('hex'))
+	//	console.log("hash: ", hash.toString('hex'))
+	//	console.log("target: ", target.toString('hex'))
 
 		if(lessThan(hash, target)) {
 			(async () => {
