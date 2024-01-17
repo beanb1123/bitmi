@@ -111,7 +111,7 @@ async function main() {
 			mine();
 		}
 
-		setTimeout(loop, 1000);
+		setTimeout(loop, 0);
 	}
 
 	console.log("loop");
