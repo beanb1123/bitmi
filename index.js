@@ -161,11 +161,11 @@ async function main() {
 
 
 
-		const hash = get_hash(block_header);
+		const hash = sha256(block_header);
 
 
 
-	//	console.log("hash: ", hash)
+		console.log("hash: ", hash)
 
 	//	console.log("target: ", target)
 
