@@ -165,9 +165,9 @@ async function main() {
 
 
 
-		console.log("hash: ", hash)
+		console.log("hash: ", hash.toString('hex'))
 
-	//	console.log("target: ", target)
+		console.log("target: ", target.toString('hex'))
 
 
 
