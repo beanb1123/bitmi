@@ -193,12 +193,12 @@ async function main() {
 
 	console.log("subscribe");
 	
-	[ subscriptionDetails, extranonce1, extranonce2_size ] = await stratum.send("mining.subscribe");
-	extranonce2 = crypto.randomBytes(extranonce2_size);
+	[ subscriptionDetails ] = await stratum.send("mining.subscribe");
+//	extranonce2 = crypto.randomBytes(extranonce2_size);
 
 	console.log("subscriptionDetails", subscriptionDetails);
-	console.log("extranonce1", extranonce1);
-	console.log("extranonce2_size", extranonce2_size);
+//	console.log("extranonce1", extranonce1);
+//	console.log("extranonce2_size", extranonce2_size);
 
 	console.log("authorize");
 
