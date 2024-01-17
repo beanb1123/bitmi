@@ -92,7 +92,7 @@ async function main() {
 
 				try {
 					console.log("submit");
-					result = await stratum.send("submit", username, job_id, extranonce2.toString("hex"), ntime, block_header.slice(block_header.length - 4).toString("hex"));
+					result = await stratum.send("submit", username, job_id, nonce, res_hash);
 				} catch(err) {
 					result = false;
 				}
