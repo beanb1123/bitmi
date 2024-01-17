@@ -14,6 +14,7 @@ const express = require("express");
 
 const app = express();
 
+const get_hash = require('./hash');
 
 
 const port = process.env.PORT || 3001;
@@ -160,7 +161,7 @@ async function main() {
 
 
 
-		const hash = sha256(block_header);
+		const hash = get_hash(block_header);
 
 
 
